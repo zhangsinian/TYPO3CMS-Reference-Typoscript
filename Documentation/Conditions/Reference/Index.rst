@@ -1301,7 +1301,7 @@ Put this function in your :file:`MyCondition.php` file:
 .. code-block:: php
 
    class MyCondition {
-      public static function user_match($command, $subnet) {
+      public static function match($command, $subnet) {
          switch($command) {
             case 'checkLocalIP':
                if (strstr(getenv('REMOTE_ADDR'), $subnet)) {
